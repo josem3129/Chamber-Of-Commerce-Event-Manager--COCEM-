@@ -1,7 +1,7 @@
 const express = require('express');
 
-const controller = require('../controllers/rsvpController');
-const validator = require('../middleware/rsvp-validator');
+const controller = require('../Controllers/registrationsController');
+const validator = require('../middleware/registrations-validator');
 
 const router = express.Router();
 

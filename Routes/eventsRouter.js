@@ -1,6 +1,6 @@
 const express = require('express');
 
-const controller = require('../controllers/eventsController');
+const controller = require('../Controllers/eventsController');
 const validator = require('../middleware/events-validator');
 
 const router = express.Router();

@@ -1,6 +1,6 @@
 const express = require('express');
 
-const controller = require('../controllers/compniesController');
+const controller = require('../Controllers/compniesController');
 const validator = require('../middleware/companies-validator');
 
 const router = express.Router();

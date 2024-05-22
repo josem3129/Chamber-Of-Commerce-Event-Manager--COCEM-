@@ -5,7 +5,7 @@ const router = express.Router();
 const eventsRoute  = require('./eventsRouter');
 const addressesRoute  = require('./addressesRouter');
 const companiesRoute  = require('./companiesRouter');
-const rsvpRoute  = require('./rsvpRouter');
+const rsvpRoute  = require('./registrationsRouter');
 
 
 router.use('/', require('./swagger'))

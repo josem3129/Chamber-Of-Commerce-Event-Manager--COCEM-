@@ -1,6 +1,6 @@
 const express = require('express');
 
-const controller = require('../controllers/addressesController');
+const controller = require('../Controllers/addressesController');
 const validator = require('../middleware/addresses-validator');
 
 const router = express.Router();
