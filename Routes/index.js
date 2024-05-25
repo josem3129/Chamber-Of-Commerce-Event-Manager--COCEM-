@@ -9,9 +9,9 @@ const rsvpRoute  = require('./registrationsRouter');
 
 
 router.use('/', require('./swagger'))
-router.use('/', (req, res) => {
-    res.status(200).send("Hello World")
-})
+// router.use('/', (req, res) => {
+//     res.status(200).send("Hello World")
+// })
 
 router.use('/events', eventsRoute);
 router.use('/addresses', addressesRoute);
