@@ -30,7 +30,7 @@ const createData = async (req, res, next) => {
   try {
     const data = {
         "name": req.body.name,
-        "addressId": req.body.addresId,
+        "addressId": req.body.addressId,
         "description": req.body.description,
         "date": req.body.date
     }
@@ -51,7 +51,7 @@ const updateData = async (req, res, next) => {
     const id = new ObjectId(req.params.id);
     const data = {
         "name": req.body.name,
-        "addressId": req.body.addresId,
+        "addressId": req.body.addressId,
         "description": req.body.description,
         "date": req.body.date
     }
