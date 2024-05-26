@@ -1,12 +1,11 @@
 const swaggerAutogen = require('swagger-autogen')();
-const port = process.env.PORT || "localhost:8080";
 
 const doc = {
     info: {
         title: 'Chamber of commerce events api',
         description: 'CSE 341 Final team project'
     },
-    host: port,
+    host: 'chamber-of-commerce-event-manager-cocem.onrender.com',
     schemes: ['https', 'http']
     
 };

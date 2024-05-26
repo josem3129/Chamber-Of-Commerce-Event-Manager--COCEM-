@@ -5,7 +5,7 @@
     "description": "CSE 341 Final team project",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "chamber-of-commerce-event-manager-cocem.onrender.com",
   "basePath": "/",
   "schemes": [
     "https",
