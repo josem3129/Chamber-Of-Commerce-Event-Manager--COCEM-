@@ -1,5 +1,5 @@
 const swaggerAutogen = require('swagger-autogen')();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || "localhost:8080";
 
 const doc = {
     info: {
@@ -7,7 +7,7 @@ const doc = {
         description: 'CSE 341 Final team project'
     },
     host: port,
-    schemes: ['http']
+    schemes: ['https', 'http']
     
 };
 

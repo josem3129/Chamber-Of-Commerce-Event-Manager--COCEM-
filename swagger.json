@@ -5,9 +5,10 @@
     "description": "CSE 341 Final team project",
     "version": "1.0.0"
   },
-  "host": 8080,
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
+    "https",
     "http"
   ],
   "paths": {
