@@ -4,9 +4,11 @@
   "description": "CSE341 Team projectnode",
   "main": "server.js",
   "scripts": {
+    "start-dev": "nodemon --exec npm run app --ignore ./swagger.json",
+    "app": "npm run swagger && node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "swagger": "node ./swagger.js",
-    "start": "nodemon index.js"
+    "start": "npm run app"
   },
   "keywords": [],
   "author": "",
@@ -21,14 +23,18 @@
     "passport": "^0.7.0",
     "passport-github2": "^0.1.12",
     "swagger-ui-express": "^4.3.0",
-    "validatorjs": "^3.22.1"
+    "validatorjs": "^3.22.1",
+    "swagger-autogen": "^2.19.0"
   },
   "devDependencies": {
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^3.1.0",
-    "prettier": "^2.5.1",
-    "swagger-autogen": "^2.19.0"
+    "prettier": "^2.5.1"
+  },
+  "jshintConfig": {
+    "esversion": 11,
+    "node": true
   }
 }

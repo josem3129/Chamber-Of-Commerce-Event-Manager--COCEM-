@@ -1,7 +1,7 @@
 const express = require('express');
 
-const controller = require('../Controllers/registrationsController');
-const validator = require('../middleware/registrations-validator');
+const controller = require('../controllers/eventsController');
+const validator = require('../middleware/events-validator');
 const {isAuthenticated} = require('../middleware/authenticate');
 
 

@@ -8,7 +8,7 @@ const companiesRoute  = require('./companiesRouter');
 const rsvpRoute  = require('./registrationsRouter');
 
 
-router.use('/', require('./swagger'))
+router.use('/', require('./swagger'));
 // router.use('/', (req, res) => {
 //     res.status(200).send("Hello World")
 // })
@@ -25,7 +25,7 @@ router.get('/logout', function (req, res, next ) {
         if (err) {
             return next(err);
         }
-        res.status(200).send('Your logged out')
+        res.status(200).send('Your logged out');
     });
 });
 

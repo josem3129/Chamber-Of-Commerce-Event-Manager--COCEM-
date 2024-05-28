@@ -1,7 +1,7 @@
-const db = require('../Models/Database');
+const db = require('../models/Database');
 const ObjectId = require('mongodb').ObjectId;
 
-const collection = "addresses";
+const collection = "events";
 
 const getData = async (req, res, next) => {
   const result = await db.getDb().db().collection(collection).find();
@@ -29,10 +29,10 @@ const getDataById =  async (req, res, next) => {
 const createData = async (req, res, next) => {
   try {
     const data = {
-        "streetAddress": req.body.streetAddress,
-        "city": req.body.city,
-        "state": req.body.state,
-        "zipCode": req.body.zipCode
+        "name": req.body.name,
+        "addressId": req.body.addressId,
+        "description": req.body.description,
+        "date": req.body.date
     }
     const result = await db.getDb().db().collection(collection).insertOne(data);
     if(result.acknowledged){
@@ -50,10 +50,10 @@ const updateData = async (req, res, next) => {
   try {
     const id = new ObjectId(req.params.id);
     const data = {
-        "streetAddress": req.body.streetAddress,
-        "city": req.body.city,
-        "state": req.body.state,
-        "zipCode": req.body.zipCode
+        "name": req.body.name,
+        "addressId": req.body.addressId,
+        "description": req.body.description,
+        "date": req.body.date
     }
     const result = await db.getDb().db().collection(collection).replaceOne(
       { _id: id },

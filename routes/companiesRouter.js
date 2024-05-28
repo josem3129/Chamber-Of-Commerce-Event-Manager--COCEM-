@@ -1,8 +1,9 @@
 const express = require('express');
 
-const controller = require('../Controllers/addressesController');
-const validator = require('../middleware/address-validator');
+const controller = require('../controllers/companiesController');
+const validator = require('../middleware/companies-validator');
 const {isAuthenticated} = require('../middleware/authenticate');
+
 
 const router = express.Router();
 
