@@ -12,38 +12,9 @@
     "http"
   ],
   "paths": {
-    "/login": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
-    "/logout": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
     "/events/": {
       "get": {
+        "tags": ["Events"],
         "description": "",
         "produces": [
           "application/json"
@@ -55,6 +26,7 @@
         }
       },
       "post": {
+        "tags": ["Events"],
         "description": "",
         "parameters": [
           {
@@ -97,6 +69,7 @@
     },
     "/events/{id}": {
       "get": {
+        "tags": ["Events"],
         "description": "",
         "produces": [
           "application/json"
@@ -119,6 +92,7 @@
         }
       },
       "put": {
+        "tags": ["Events"],
         "description": "",
         "parameters": [
           {
@@ -165,6 +139,7 @@
         }
       },
       "delete": {
+        "tags": ["Events"],
         "description": "",
         "parameters": [
           {
@@ -189,6 +164,7 @@
     },
     "/addresses/": {
       "get": {
+        "tags": ["Addresses"],
         "description": "",
         "produces": [
           "application/json"
@@ -200,6 +176,7 @@
         }
       },
       "post": {
+        "tags": ["Addresses"],
         "description": "",
         "parameters": [
           {
@@ -242,6 +219,7 @@
     },
     "/addresses/{id}": {
       "get": {
+        "tags": ["Addresses"],
         "description": "",
         "produces": [
           "application/json"
@@ -264,6 +242,7 @@
         }
       },
       "put": {
+        "tags": ["Addresses"],
         "description": "",
         "parameters": [
           {
@@ -310,6 +289,7 @@
         }
       },
       "delete": {
+        "tags": ["Addresses"],
         "description": "",
         "parameters": [
           {
@@ -334,6 +314,7 @@
     },
     "/companies/": {
       "get": {
+        "tags": ["Companies"],
         "description": "",
         "produces": [
           "application/json"
@@ -345,6 +326,7 @@
         }
       },
       "post": {
+        "tags": ["Companies"],
         "description": "",
         "parameters": [
           {
@@ -393,6 +375,7 @@
     },
     "/companies/{id}": {
       "get": {
+        "tags": ["Companies"],
         "description": "",
         "produces": [
           "application/json"
@@ -415,6 +398,7 @@
         }
       },
       "put": {
+        "tags": ["Companies"],
         "description": "",
         "parameters": [
           {
@@ -467,6 +451,7 @@
         }
       },
       "delete": {
+        "tags": ["Companies"],
         "description": "",
         "parameters": [
           {
@@ -491,6 +476,7 @@
     },
     "/rsvp/": {
       "get": {
+        "tags": ["RSVP"],
         "description": "",
         "produces": [
           "application/json"
@@ -502,6 +488,7 @@
         }
       },
       "post": {
+        "tags": ["RSVP"],
         "description": "",
         "parameters": [
           {
@@ -556,6 +543,7 @@
     },
     "/rsvp/{id}": {
       "get": {
+        "tags": ["RSVP"],
         "description": "",
         "produces": [
           "application/json"
@@ -578,6 +566,7 @@
         }
       },
       "put": {
+        "tags": ["RSVP"],
         "description": "",
         "parameters": [
           {
@@ -636,6 +625,7 @@
         }
       },
       "delete": {
+        "tags": ["RSVP"],
         "description": "",
         "parameters": [
           {
