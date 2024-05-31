@@ -4,7 +4,7 @@
   "description": "CSE341 Team projectnode",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "swagger": "node ./swagger.js",
     "start": "nodemon index.js"
   },
@@ -24,11 +24,15 @@
     "validatorjs": "^3.22.1"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^4.3.2",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.0",
     "prettier": "^2.5.1",
-    "swagger-autogen": "^2.19.0"
+    "swagger-autogen": "^2.19.0",
+    "preset": "@shelf/jest-mongodb"
+
   }
 }
