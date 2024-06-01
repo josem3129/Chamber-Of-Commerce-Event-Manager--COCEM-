@@ -30,9 +30,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^29.7.0",
     "nodemon": "^3.1.0",
+    "preset": "@shelf/jest-mongodb",
     "prettier": "^2.5.1",
-    "swagger-autogen": "^2.19.0",
-    "preset": "@shelf/jest-mongodb"
-
+    "supertest": "^7.0.0",
+    "swagger-autogen": "^2.19.0"
   }
 }
