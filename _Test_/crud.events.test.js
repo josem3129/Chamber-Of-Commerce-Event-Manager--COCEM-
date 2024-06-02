@@ -15,7 +15,7 @@ describe('Events API', () => {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-        db = await connection.db('testDatabase'); // Use a test database
+        db = await connection.db('events'); // Use a test database
 
         // Simulate login to get an auth token
         const loginResponse = await request.get('/login'); // Adjust if needed
@@ -45,7 +45,7 @@ describe('Events API', () => {
     });
 
     test('responds to GET /events/:id', async () => {
-        const res = await request.get(`/events/${eventId}`)
+        const res = await request.get(`/events/664d55f9cc7212b1b5f4bf52`)
             .set('Authorization', `Bearer ${authToken}`);
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200);

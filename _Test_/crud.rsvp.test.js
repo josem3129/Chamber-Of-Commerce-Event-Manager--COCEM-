@@ -49,7 +49,7 @@ describe('RSVP API', () => {
     });
 
     test('responds to GET /rsvp/:id', async () => {
-        const res = await request.get(`/rsvp/${rsvpId}`)
+        const res = await request.get(`/rsvp/664d57d0cc7212b1b5f5cf81`)
             .set('Authorization', `Bearer ${authToken}`);
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200);

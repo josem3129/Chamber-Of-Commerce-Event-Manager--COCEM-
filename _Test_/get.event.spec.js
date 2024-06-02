@@ -41,6 +41,6 @@ describe('Test Handlers', () => {
         const res = await request.get('/companies/');
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200)
-        expect(JSON.parse(res.text).some(x => x.emailAddress === "manager@walmart.com")).toBe(true)
+        expect(JSON.parse(res.text).some(x => x.emailAddress === "any@gmail.com")).toBe(true)
     })
 })
