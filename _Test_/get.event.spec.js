@@ -19,7 +19,7 @@ describe('Test Handlers', () => {
     });
     //Test GET ALL 
     it('responds to /event', async () => {
-        const res = await request.get('/events/');
+        const res = await request.get('/events');
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200)
         expect(JSON.parse(res.text).some(x => x.name === "Buy One Get One At Full Price!")).toBe(true)
