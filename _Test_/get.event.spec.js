@@ -14,30 +14,29 @@ describe('Test Handlers', () => {
         });        
     });
     afterAll(async() => {
-        console.log(`test`);
         await connection.close()
     });
     //Test GET ALL 
     it('responds to /event', async () => {
-        const res = await request.get('/events/');
+        const res = await request.get('/events');
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200)
         expect(JSON.parse(res.text).some(x => x.name === "Buy One Get One At Full Price!")).toBe(true)
     })
     it('responds to /rsvp', async () => {
-        const res = await request.get('/rsvp/');
+        const res = await request.get('/rsvp');
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200)
         expect(JSON.parse(res.text).some(x => x.name === "John Doe")).toBe(true)
     })
     it('responds to /address', async () => {
-        const res = await request.get('/addresses/');
+        const res = await request.get('/addresses');
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200)
         expect(JSON.parse(res.text).some(x => x.streetAddress === "140 W University Pkwy")).toBe(true)
     })
     it('responds to /companies', async () => {
-        const res = await request.get('/companies/');
+        const res = await request.get('/companies');
         expect(res.header['content-type']).toBe('application/json; charset=utf-8');
         expect(res.statusCode).toBe(200)
         expect(JSON.parse(res.text).some(x => x.emailAddress === "test@company.com")).toBe(true)
