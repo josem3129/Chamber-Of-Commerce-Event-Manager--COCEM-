@@ -67,8 +67,9 @@ process.on('uncaughtException', (err, origin) => {
 
 mongodb.initDb((err) => {
   if (err) {
-    console.log(err);
+    console.log(`${err} test`);
   } else {
+    
     app.listen(port);
     console.log(`Connected to DB and listening on ${port}`);
   }
