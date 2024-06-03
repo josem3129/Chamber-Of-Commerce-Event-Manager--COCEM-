@@ -4,7 +4,7 @@
   "description": "CSE341 Team projectnode",
   "main": "server.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "swagger": "node ./swagger.js",
     "start": "nodemon index.js"
   },
